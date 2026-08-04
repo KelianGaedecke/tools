@@ -1,11 +1,13 @@
 To suggest any change: fork, edit, create a pull request
 
-The script html_excel.py is intended to facilitate the editing of the list of tools.  
+The script html_excel.py is intended to facilitate the editing of the list of tools.
+* Install dependencies: `pandas`, `bs4`
 * Run `python html_excel.py index.html tools_list.xlsx` to obtain an excel file with all the URLs, tool names, and descriptions.
 * Add the desired tool names, URLs, and descriptions.
 * Run `python html_excel.py tools_list.xlsx index_updated.html`.
+    * Alternatively you can update from a .csv instead of a .xlsx file: `python html_excel.py tools_list.csv index_updated.html`
 * Verify the file by opening with your browser.
 * Replace index.html (`mv index_updated.html index.html`)
 
 Commit and push.
-NB. the gitignore is set to ignore any .xlsx file
+NB. the gitignore is set to ignore any .xlsx and .csv file
